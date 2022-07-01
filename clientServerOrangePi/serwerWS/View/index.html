@@ -1,0 +1,88 @@
+<!DOCTYPE HTML> 
+<html lang='pl'> 
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<title>Serwer Node.js</title>
+	<link rel='stylesheet' href='style.css'>
+	<script src="scripts.js" defer></script>
+</head>
+<body>
+
+	<header>
+			
+			<span class="border" style="font-size:15px;" >PROJEKT PRZEJŚCIOWY</span><br>
+			<span class="border">SERWER W ŚRODOWISKU NODE.JS</span>
+			
+	</header>	
+	<section>
+<div class="container">
+ 	
+	<div class="timer" id="time">
+	99:99:99
+	</div>
+	<div class="date" id="date">
+	99.99.9999
+	</div>
+	<div id="connState" class="conn">
+	BRAK POŁĄCZENIA
+	</div>
+
+	<div class="row">
+		<div class="column">
+				<div class="card">
+				<h1>PLANOWANIE ZADAŃ:</h1>
+				<input class="tinput" type="time" id="inputTime"/>
+				<h2>ZAŁĄCZ/WYŁĄCZ:</h2>
+				<label class="switch">
+				<input type="checkbox" id="switchOnOff">
+				<span class="slider"></span>
+				</label>
+				<button id="buttonAdd" class="btnA">DODAJ</button>
+				</div>
+		</div>
+			<div class="column">
+				<div class="card">
+				<h1>STEROWANIE MANUALNE:</h1>
+				<div>
+				<!--<label class="caption">Sterowanie GPIO:</label>-->
+				 <button id="buttonOn" class="btn">WŁĄCZ</button>
+				 <button id="buttonOff" class="btn">WYŁĄCZ</button>
+				</div>
+				<!--<label class="caption">Stan GPIO:-->
+				<svg  height="80px" width="100%" style="background: rgba(192, 192, 192,0.2);" > <!-- style="background: red"-->
+				 <!--<text font-size="20" x="0%" y="60%" fill="black">Stan diody:</text>-->
+				<rect id="rect" x="35%" y="10px" width="30%" height="60px" stroke="rgba(0, 0, 0, 0.8)" stroke-width="4" fill="rgba(192, 192, 192, 0.8)"/>
+				</svg>
+				</label>
+			</div>
+			</div>
+		</div>
+	<div class="row">
+			<div class="column">
+				<div class="card2">
+				<h1>ZAPLANOWANIE ZADANIA:</h1>
+				<textarea id="txtPlanned" readonly class="txtarea">
+Brak danych
+				</textarea>			
+				</div>
+		</div>
+		<div class="column">
+				<div class="card2">
+				<h1>LOGOWANIE ZDARZEŃ:</h1>
+				<textarea id="txtLogged" readonly class="txtarea">
+Brak danych
+				</textarea>	
+				</div>
+		</div>
+	</div>
+</section>		
+	<footer>
+		<p>
+		Projekt przejściowy 2019
+		</p>
+	</footer>
+</div>
+
+</body>
+</html>
